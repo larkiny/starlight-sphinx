@@ -1,26 +1,14 @@
 {
-  "name": "starlight-typedoc-example",
-  "version": "0.17.0",
+  "name": "starlight-sphinx-example",
+  "version": "0.1.0",
   "license": "MIT",
-  "description": "Starlight plugin to generate documentation from TypeScript using TypeDoc.",
+  "description": "Starlight plugin to generate documentation from Python packages using Sphinx autodoc2.",
   "author": "HiDeoo <github@hideoo.dev> (https://hideoo.dev)",
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "dev:single-entrypoints": "astro dev --config astro.config.ts",
-    "dev:multiple-entrypoints": "astro dev --config astro.multiple-entrypoints.config.ts",
-    "dev:packages-entrypoints": "pnpm -C ../fixtures/packages run build && astro dev --config astro.packages-entrypoints.config.ts",
-    "dev:multiple-plugins": "astro dev --config astro.multiple-plugins.config.ts",
     "build": "astro build",
-    "build:single-entrypoints": "astro build --config astro.config.ts",
-    "build:multiple-entrypoints": "astro build --config astro.multiple-entrypoints.config.ts",
-    "build:packages-entrypoints": "pnpm -C ../fixtures/packages run build && astro build --config astro.packages-entrypoints.config.ts",
-    "build:multiple-plugins": "astro build --config astro.multiple-plugins.config.ts",
     "preview": "astro preview",
-    "preview:single-entrypoints": "astro preview --config astro.config.ts",
-    "preview:multiple-entrypoints": "astro preview --config astro.multiple-entrypoints.config.ts",
-    "preview:packages-entrypoints": "astro preview --config astro.packages-entrypoints.config.ts",
-    "preview:multiple-plugins": "astro preview --config astro.multiple-plugins.config.ts",
     "astro": "astro",
     "lint": "eslint . --cache --max-warnings=0"
   },
@@ -28,11 +16,7 @@
     "@astrojs/starlight": "^0.32.0",
     "astro": "^5.3.0",
     "sharp": "^0.33.5",
-    "starlight-typedoc": "workspace:*",
-    "typedoc": "^0.28.1",
-    "typedoc-plugin-frontmatter": "^1.3.0",
-    "typedoc-plugin-markdown": "^4.6.0",
-    "typedoc-plugin-mdn-links": "^5.0.1"
+    "starlight-sphinx": "workspace:*"
   },
   "engines": {
     "node": ">=18.17.1"
@@ -43,16 +27,9 @@
   "keywords": [
     "starlight",
     "plugin",
-    "typedoc",
-    "typescript",
+    "sphinx",
+    "python",
     "documentation",
     "astro"
-  ],
-  "homepage": "https://github.com/HiDeoo/starlight-typedoc",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/HiDeoo/starlight-typedoc.git",
-    "directory": "example"
-  },
-  "bugs": "https://github.com/HiDeoo/starlight-typedoc/issues"
+  ]
 }

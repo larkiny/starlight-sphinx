@@ -1,1 +1,1 @@
-packages/starlight-typedoc/README.md
+packages/starlight-sphinx/README.md

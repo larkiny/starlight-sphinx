@@ -1,8 +1,8 @@
 {
-  "name": "starlight-typedoc-monorepo",
-  "version": "0.17.0",
+  "name": "starlight-sphinx-monorepo",
+  "version": "0.1.0",
   "license": "MIT",
-  "description": "Starlight plugin to generate documentation from TypeScript using TypeDoc.",
+  "description": "Starlight plugin to generate documentation from Python packages using Sphinx autodoc2.",
   "author": "HiDeoo <github@hideoo.dev> (https://hideoo.dev)",
   "type": "module",
   "scripts": {
@@ -39,16 +39,11 @@
   "keywords": [
     "starlight",
     "plugin",
-    "typedoc",
-    "typescript",
+    "sphinx",
+    "python",
     "documentation",
-    "astro"
+    "astro",
+    "autodoc2"
   ],
-  "homepage": "https://github.com/HiDeoo/starlight-typedoc",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/HiDeoo/starlight-typedoc.git"
-  },
-  "bugs": "https://github.com/HiDeoo/starlight-typedoc/issues",
   "prettier": "@hideoo/prettier-config"
 }
